@@ -1,9 +1,13 @@
 #ifndef SCANNER_H_INCLUDED
 #define SCANNER_H_INCLUDED
 
-enum tokens {FDT = EOF, SEP = ',', CAD};
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
-enum tokens get_token();
-
+enum TOKENS {FDT = EOF, SEP = ',', CAD};
+char buffer[256] ;
+int get_token();
 
 #endif
