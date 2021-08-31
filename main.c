@@ -1,4 +1,8 @@
 #include "scanner.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 int main(){
 
@@ -7,8 +11,7 @@ int main(){
     while(token != FDT){
         token = get_token();
         
-        switch (token)
-        {
+        switch (token){
         case SEP:
             printf("Separador: %c \n", buffer[0]);
             break;

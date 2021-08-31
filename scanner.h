@@ -6,7 +6,7 @@
 #include <string.h>
 #include <ctype.h>
 
-enum TOKENS {FDT = EOF, SEP = ',', CAD};
+enum TOKENS{FDT = EOF, SEP = ',', CAD};
 char buffer[256] ;
 int get_token();
 
